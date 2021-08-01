@@ -1,19 +1,16 @@
 * {
     box-sizing: border-box;
-   
+
 }
 
-section {
-    padding: 50px;
+body {
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    background-color: wheat;
     align-items: center;
-    color: white;
-    height: 200px;
+    height: 100vh;
 }
+
+
 .block {
     display: flex;
     justify-content: space-between;
@@ -41,20 +38,26 @@ section {
     justify-content: center;
 }
 
-.bl-2 .bl-3 .bl-6 {
+.bl-2 .circle:last-child {
+    align-self: flex-end;
+}
+.bl-3 .circle:last-child {
+    align-self: flex-end;
+}
+.bl-3 .circle-center {
+    align-self: center;
+}
+.bl-4 .col, .bl-5 .col {
+    display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    align-content: normal;
-    align-items: stretch;
+    justify-content: space-between;
 }
 
-.bl-5 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: stretch;
+.bl-5 .col:nth-last-child(2) {
+    align-self: center;
 }
-.bl-51 {
+
+.bl-6 {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
@@ -63,39 +66,5 @@ section {
 }
 
 
-.bl-4 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    
-    
-}
-.circle-center {
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-}
 
-.circle-up-left {
-    align-self: flex-end;
-    align-content: flex-end;
-    justify-content: space-between;
-}
 
-.circle-dw-left {
-    align-self: flex-end;
-    align-content: flex-end;
-    justify-content: space-between;
-}
-
-.circle-dw {
-    align-self: flex-end;
-}
-.circle-up {
-    align-self: flex-start;
-    align-content: space-between;
-}
-.circle-right {
-    align-self: flex-start;
-    align-content: flex-start;
-}
